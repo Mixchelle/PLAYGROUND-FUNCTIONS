@@ -1,8 +1,10 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
-
+function compareTrue(calor, sol) {
+if (calor && sol === true){
+  return true;
+} return false;
+ }
+console.log(compareTrue(true, true))
 // Desafio 2
 function calcArea() {
   // seu código aqui
@@ -29,8 +31,8 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(x, y, z) {
+ 
 }
 
 // Desafio 8
