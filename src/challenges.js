@@ -6,10 +6,12 @@ if (calor && sol === true){
  }
 console.log(compareTrue(true, true))
 // Desafio 2
-function calcArea() {
+function calcArea(base, heigth){
+  let area =  (base * heigth) / 2.
+  return area
   // seu código aqui
 }
-
+console.log(calcArea (10, 50))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
