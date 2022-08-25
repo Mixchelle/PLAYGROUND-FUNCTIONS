@@ -32,24 +32,24 @@ function compareTrue(calor, sol) {
   }
   console.log(footballPoints(14, 8))
   // Desafio 6
-  function highestCount(numeros) {
-    let maiornumero = 0;
+  function highestCount(nun) {
+    let numeroMaior = nun[0];
+    let index = 0;
     let contador = 0;
   
-    for(index = 0; index < numeros.length; index +=1) {
-      if (numeros[index] > maiornumero) {
-        maiornumero = numeros[index];
-      }
+    for (let index in nun) {
+        if (nun[index] > numeroMaior) {
+            numeroMaior = nun[index];
+        }
     }
-    for(index1=0; index1 < numeros.length; index1 +=1) {
-    if (maiornumero === numeros[index1]) {
-      contador += 1;
-
+    for (let index2 in nun) {
+        if (nun[index2] === numeroMaior) {
+            contador += 1;
+        }
     }
+    
+    return contador;
   }
-    return contador
-  }
- 
   
   
   console.log(highestCount([1, 1, 1]))
