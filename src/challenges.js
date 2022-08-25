@@ -71,9 +71,25 @@ function compareTrue(calor, sol) {
   
   
   // Desafio 8
-  function fizzBuzz() {
-    // seu código aqui
+function fizzBuzz(n){   
+  let resultado = [];
+  for (let i = 0; i < n.length; i += 1) {
+    if (n[i] % 3 === 0 && n[i] % 5 === 0) {
+      resultado.push('fizzBuzz');
+    } else if (n[i] % 3 === 0 && n[i] % 5 !== 0) {
+      resultado.push('fizz');
+    } else if (n[i] % 5 === 0 && n[i] % 3 !== 0) {
+      resultado.push('buzz')
+    } else {
+      resultado.push('bug!')
+    }
   }
+  return resultado;
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
+
+
   
   // Desafio 9
   function encode() {
@@ -82,7 +98,7 @@ function compareTrue(calor, sol) {
   function decode() {
     // seu código aqui
   }
-  
+ console.log(fizzBuzz(15))
   // Desafio 10
   function techList() {
     // seu código aqui
