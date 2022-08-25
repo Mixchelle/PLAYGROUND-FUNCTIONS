@@ -55,22 +55,19 @@ function compareTrue(calor, sol) {
   console.log(highestCount([1, 1, 1]))
   
   // Desafio 7
-  function catAndMouse(a, b, c){
-    let cat1 = a;
-    let cat2 = b;
-    let mouse = c;
-     if ((Math.abs(mouse - cat1)) > (Math.abs(mouse - cat2))){
-      return 'cat2'
-     } else if ((Math.abs(mouse - cat1)) == (Math.abs(mouse - cat2))) {
+  function catAndMouse(mouse, cat1, cat2){
+     if ((Math.abs(mouse - cat1)) < (Math.abs( mouse - cat2))){
+      return 'cat1'
+     } else if ((Math.abs(mouse - cat1)) === (Math.abs(mouse - cat2))){
       return 'os gatos trombam e o rato foge'
      } else {
-      return 'cat1'
+      return 'cat2'
      }
 
 
   }
   
-  console.log(catAndMouse(6, 12, 1))
+  console.log(catAndMouse(100, 100, 5))
   
   
   // Desafio 8
