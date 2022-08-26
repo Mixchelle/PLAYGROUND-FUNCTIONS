@@ -94,23 +94,35 @@ console.log(fizzBuzz([15]));
   // Desafio 9
   function encode(texto) {
     let code = '';
-  code = texto.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 4).replace(/u/gi, 5)
+  code = texto.replaceAll(/a/gi, 1).replaceAll(/e/gi, 2).replaceAll(/i/gi, 3).replaceAll(/o/gi, 4).replaceAll(/u/gi, 5)
     return code;
     // seu código aqui
   }
  
   function decode(texto) {
     let code = '';
-    code = texto.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi,'u')
+    code = texto.replaceAll(/1/gi, 'a').replaceAll(/2/gi, 'e').replaceAll(/3/gi, 'i').replaceAll(/4/gi, 'o').replaceAll(/5/gi,'u')
      return code;
   }
     
   
   // Desafio 10
-  function techList() {
-   
-    // seu código aqui
+  function techList(tech, nome) {
+    let techOr = tech.sort();
+    let list = [];
+    if (tech.length === 0) {
+      return 'Vazio!';
+    }
+    for (let index = 0; index < techOr.length; index += 1) {
+      list.push(({
+        tech: techOr[index],
+        name: nome,
+      }));
+    }
+    return list;
   }
+  
+  console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
   module.exports = {
     calcArea,
