@@ -86,24 +86,32 @@ function fizzBuzz(n){
   }
   return resultado;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+console.log(fizzBuzz([15]));
 
 
 
   
   // Desafio 9
-  function encode() {
+  function encode(texto) {
+    let code = '';
+  code = texto.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 4).replace(/u/gi, 5)
+    return code;
     // seu código aqui
   }
-  function decode() {
-    // seu código aqui
+ 
+  function decode(texto) {
+    let code = '';
+    code = texto.replace(/1/gi, 'a').replace(/2/gi, 'e').replace(/3/gi, 'i').replace(/4/gi, 'o').replace(/5/gi,'u')
+     return code;
   }
- console.log(fizzBuzz(15))
+    
+  
   // Desafio 10
   function techList() {
+   
     // seu código aqui
   }
-  
+
   module.exports = {
     calcArea,
     catAndMouse,
