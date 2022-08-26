@@ -1,13 +1,13 @@
 // Desafio 1
 function compareTrue(calor, sol) {
-  if (calor && sol === true){
+  if (calor && sol === true) {
     return true;
   } return false;
-   }
-  console.log(compareTrue(true, true))
-  // Desafio 2
-  function calcArea(base, heigth){
-    let area =  (base * heigth) / 2.
+}
+console.log(compareTrue(true, true));
+ // Desafio 2
+function calcArea(base, heigth) {
+  let area =  (base * heigth) / 2.;
     return area
     // seu código aqui
   }
