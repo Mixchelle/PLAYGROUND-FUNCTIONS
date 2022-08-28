@@ -5,9 +5,9 @@ function compareTrue(calor, sol) {
   } return false;
 }
 console.log(compareTrue(true, true));
- // Desafio 2
+// Desafio 2
 function calcArea(base, heigth) {
-  let area =  (base * heigth) / 2.;
+  let area = (base * heigth) / 2;
     return area;
   // seu código aqui
   }
@@ -23,6 +23,7 @@ console.log('foguete')
 function concatName(array) {
   return array[array.length -1].concat(','+array[0]);
     // seu código aqui
+    
   }
   console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
   // Desafio 5
