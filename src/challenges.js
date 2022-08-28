@@ -8,20 +8,20 @@ console.log(compareTrue(true, true));
  // Desafio 2
 function calcArea(base, heigth) {
   let area =  (base * heigth) / 2.;
-    return area
-    // seu código aqui
+    return area;
+  // seu código aqui
   }
   console.log(calcArea (10, 50))
   
   // Desafio 3
-  function splitSentence(frase) {
-  return frase.split(' ')
-  }
-  console.log('foguete')
-  
-  // Desafio 4
-  function concatName(array) {
-    return array[array.length-1].concat(', '+array[0]);
+function splitSentence(frase) {
+  return frase.split(' ');
+ }
+console.log('foguete')
+
+// Desafio 4
+function concatName(array) {
+  return array[array.length -1].concat(','+array[0]);
     // seu código aqui
   }
   console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
@@ -104,7 +104,7 @@ console.log(fizzBuzz([15]));
     code = texto.replaceAll(/1/gi, 'a').replaceAll(/2/gi, 'e').replaceAll(/3/gi, 'i').replaceAll(/4/gi, 'o').replaceAll(/5/gi,'u')
      return code;
   }
-    
+  
   
   // Desafio 10
   function techList(tech, nome) {
