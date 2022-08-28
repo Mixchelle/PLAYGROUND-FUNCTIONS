@@ -7,7 +7,7 @@ function compareTrue(calor, sol) {
 console.log(compareTrue(true, true));
 // Desafio 2
 function calcArea(base, heigth) {
-  let area = (base * heigth) / 2;
+  let area =(base * heigth) / 2.;
     return area;
   // seu código aqui
   }
@@ -21,11 +21,10 @@ console.log('foguete')
 
 // Desafio 4
 function concatName(array) {
-  return array[array.length -1].concat(','+array[0]);
-    // seu código aqui
-    
-  }
-  console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+  return array[array.length-1].concat(', '+array[0]);
+  // seu código aqui
+}
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
   // Desafio 5
   function footballPoints(wins, ties) {
     return wins * 3 + ties * 1;  
